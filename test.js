@@ -23,8 +23,24 @@ test('gets date components', t => {
 	t.is(components.dateString, dateString);
 });
 
-test('supports short date formats', t => {
+test('supports format: Mon Feb 13 2017', t => {
 	const dateString = 'Mon Feb 13 2017';
+	const components = fn(dateString);
+
+	t.is(components.day, 13);
+	t.is(components.weekday, 1);
+	t.is(components.month, 1);
+	t.is(components.year, 2017);
+	t.is(components.hour, 0);
+	t.is(components.minutes, 0);
+	t.is(components.seconds, 0);
+	t.is(components.milliseconds, 0);
+	t.is(components.epoch, 1486944000000);
+	t.is(components.dateString, dateString);
+});
+
+test('supports format: 02/13/2017', t => {
+	const dateString = '02/13/2017';
 	const components = fn(dateString);
 
 	t.is(components.day, 13);
