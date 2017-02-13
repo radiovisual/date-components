@@ -1,0 +1,37 @@
+{
+  "name": "date-components",
+  "version": "0.0.1",
+  "description": "Extract individual date components from a Date String",
+  "license": "MIT",
+  "repository": "radiovisual/date-components",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "object",
+    "string",
+    "components",
+    "date",
+    "get",
+    "extract"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
